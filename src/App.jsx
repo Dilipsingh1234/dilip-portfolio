@@ -98,7 +98,7 @@ const projects = [
       "A queue-based MLOps system for running machine learning inference asynchronously using AWS S3, SQS, Docker, and Airflow.",
     tech: ["Python", "AWS S3", "AWS SQS", "Docker", "Airflow", "MLOps"],
     highlight: "Cloud-powered ML inference",
-    github: "",
+    github: "https://github.com/Dilipsingh1234/async-ai-inference-system",
   },
   {
     title: "YouBot AI",
