@@ -1,0 +1,101 @@
+.wrap { width: min(72rem, calc(100% - 3rem)); margin-inline: auto; }
+header { color: #f8f9fb; position: sticky; top: 0; z-index: 5; background: #101114; border-bottom: 1px solid #34353a; }
+.nav, .nav-links, .actions { display: flex; align-items: center; gap: 1.5rem; }
+.nav { min-height: 4rem; }
+.brand { display: inline-flex; align-items: center; gap: .65rem; margin-right: auto; font-weight: 700; letter-spacing: -.035em; }
+.nav-links, .resume, .menu-toggle { font-size: .9rem; }
+.nav-links { color: #cdced4; }
+.nav-links a:hover, .menu-toggle:hover { color: #ffffff; text-decoration: underline; }
+.resume, .menu-toggle, .button { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; }
+.resume { border: 1px solid #75767c; padding-inline: 1rem; border-radius: 2rem; }
+.menu-toggle { display: none; cursor: pointer; }
+.hero {
+  background: radial-gradient(ellipse at top, #132244, transparent 54%),
+    radial-gradient(ellipse at bottom right, #201a32, transparent 48%), #050608;
+  text-align: center;
+}
+.intro { padding-block: clamp(5rem, 10vw, 10rem); }
+h1, h2, .role h3, .result strong { font-weight: 600; line-height: 1.08; letter-spacing: -.045em; }
+h1 { font-size: clamp(3.2rem, 7.1vw, 6rem); }
+.field { margin: .65rem 0 1.5rem; color: #d0d2da; font-size: clamp(1.15rem, 2vw, 1.6rem); }
+.bio { max-width: 41rem; margin-inline: auto; color: #c3c6ce; font-size: clamp(1rem, 1.5vw, 1.18rem); line-height: 1.65; text-wrap: pretty; }
+.intro .actions { justify-content: center; }
+.actions { margin-top: 1.7rem; flex-wrap: wrap; gap: .9rem 1.5rem; }
+.button { border-radius: 2rem; padding: .65rem 1.3rem; background: #f6f6f7; color: #16171a; font-weight: 600; }
+.text-link { text-decoration: underline; text-underline-offset: .3em; text-decoration-color: #8d909a; }
+a:hover { text-decoration-color: currentColor; }
+.section { padding-block: clamp(2.8rem, 6vw, 5.4rem); }
+.light { background: #fafafa; color: #18191d; }
+h2 { margin-bottom: 2rem; font-size: clamp(2.8rem, 5vw, 4.6rem); letter-spacing: -.03em; }
+.role, .education article { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 2rem; border-top: 1px solid #d8d9dc; padding: 2rem 0; }
+.role:last-child, .education article:last-child { padding-bottom: 0; }
+.meta { color: #585a61; font-size: .9rem; }
+.role h3 { font-size: clamp(2rem, 3vw, 2.8rem); margin: .55rem 0; }
+.company-logo { display: block; width: 12rem; max-width: 100%; height: auto; margin-left: -.85rem; }
+.role-name, dt { font-weight: 600; }
+.duties { display: grid; gap: 1.05rem; }
+dd, .skills p, .education article p { color: #494c53; line-height: 1.6; }
+dd { margin-top: .15rem; max-width: 58ch; }
+.featured, .skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.project { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(1.2rem, 2.4vw, 2rem); background: #141518; border: 1px solid #333439; border-radius: .85rem; }
+.result { width: 100%; min-height: 7.4rem; margin-bottom: 1.4rem; border-bottom: 1px solid #393b42; color: #f2f3f6; display: flex; flex-direction: column; justify-content: center; padding-bottom: 1rem; }
+.result strong { font-size: 3.5rem; }
+.result span, figcaption { font-size: .9rem; }
+.flow { display: flex; align-items: center; gap: .35rem; margin-top: .8rem; }
+.flow li { display: flex; align-items: center; font-size: .9rem; font-weight: 600; }
+.flow li + li::before { content: "→"; margin-right: .35rem; }
+.project h3, .education h3, .more-heading { font-weight: 600; font-size: 1.45rem; line-height: 1.22; letter-spacing: -.035em; }
+.project p, .compact span, #contact > p { line-height: 1.6; color: #c9cbd2; }
+.project p { margin: .8rem 0 1.4rem; }
+.project a { margin-top: auto; }
+.more-heading { margin: 2.3rem 0 1rem; }
+.compact { display: grid; grid-template-columns: 1fr 1.35fr auto; align-items: baseline; gap: 1rem; border-top: 1px solid #393b40; padding: 1rem 0; }
+.compact:hover strong { text-decoration: underline; }
+.compact small { font-size: .9rem; }
+.skills { gap: 1.7rem 2.5rem; }
+.skills h3 { font-weight: 700; margin-bottom: .35rem; }
+.education { padding-top: 0; }
+.education h3 { margin-bottom: .5rem; }
+footer { padding-block: 1.5rem; border-top: 1px solid #393b40; font-size: .9rem; color: #c4c6cb; }
+.button:hover, .resume:hover { background: white; color: #16171a; }
+.job-date { font-variant-numeric: tabular-nums; }
+.location { margin-top: .4rem; }
+.duties > div { padding-left: 1rem; border-left: 2px solid #dedfe3; }
+.project { position: relative; overflow: hidden; }
+.result { min-height: 9rem; color: #ebeef6; }
+.flow { gap: 0; }
+.flow li { padding: .3rem .45rem; border: 1px solid #70747f; border-radius: .3rem; background: #282a31; position: relative; }
+.flow li + li { margin-left: .7rem; }
+.flow li + li::before { content: ""; position: absolute; right: 100%; width: .75rem; height: 1px; background: #8c909c; margin: 0; }
+.accuracy { height: 4px; width: 100%; margin-top: .7rem; border-radius: 2px; background: #3f424b; }
+.accuracy i { display: block; height: 100%; background: #a9b8dc; border-radius: inherit; }
+.skills > div { padding-top: 1rem; border-top: 1px solid #d8d9dc; }
+@media (min-width: 48.01rem) and (max-width: 62rem) {
+  .featured { gap: .7rem; }
+  .project { padding: 1rem; }
+}
+@media (max-width: 48rem) {
+  .wrap { width: calc(100% - 2.5rem); }
+  .nav { gap: 1rem; }
+  .menu-toggle { display: inline-flex; }
+  .nav-links { display: none; position: absolute; inset: 100% 0 auto; background: #101114; border-bottom: 1px solid #44464d; padding: .65rem 1.25rem; }
+  .nav-links[data-open="true"] { display: grid; gap: 0; }
+  .nav-links a { padding-block: .7rem; }
+  .featured, .role, .education article { grid-template-columns: 1fr; }
+  .role, .education article { gap: 1.25rem; padding-block: 1.5rem; }
+  .featured { gap: .9rem; }
+  .result { min-height: auto; }
+  .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .compact { grid-template-columns: 1fr auto; gap: .2rem .8rem; }
+  .compact small { grid-area: 1 / 2; }
+  .compact span { grid-column: 1 / -1; }
+}
+@media (max-width: 30rem) {
+  .skills { grid-template-columns: 1fr; gap: 1rem; }
+
+}
+
+@media (max-width: 24rem) {
+  .nav { gap: .6rem; }
+  .brand { gap: .35rem; }
+}
