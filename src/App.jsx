@@ -156,9 +156,11 @@ function App() {
         <section id="home" className="hero">
           <div className="wrap intro" id="about">
             <h1>Dilip Singh Thakur</h1>
-            <p className="field">Data engineering &amp; machine learning</p>
-            <p className="bio">I’m based in Minneapolis, studying AI at the University of St. Thomas
-              and working on data pipelines at Seagate. One of my recent projects looks at whether you can use past Chicago crime reports to predict where an incident will be reported next.</p>
+            <p className="field">Software engineering, data engineering &amp; agentic systems</p>
+            <p className="bio">Data Engineering Intern at Seagate, where I build data pipelines and
+              troubleshoot production issues. I’m pursuing a master’s in AI at the University of
+              St. Thomas. I’m passionate about building AI systems from the ground up, from shaping
+              the data a model learns from to writing the software that puts it to work.</p>
             <div className="actions">
               <a className="button" href="#projects">View projects</a>
               <a className="text-link" href="mailto:Dilipsthakur27@gmail.com">Contact me</a>
