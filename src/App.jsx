@@ -19,7 +19,7 @@ const skills = [
   },
   {
     title: "Data Engineering",
-    items: ["SQL", "ETL Pipelines", "Data Cleaning", "Data Transformation", "Automation"],
+    items: ["SQL", "ETL/ELT", "Databricks", "Apache Hive", "Oracle SQL", "Data Reconciliation"],
   },
   {
     title: "MLOps / Cloud",
@@ -37,17 +37,28 @@ const skills = [
 
 const experience = [
   {
-    role: "Software Engineer",
-    company: "Avance Consulting",
+    role: "Data Engineering Intern",
+    company: "Seagate Technology",
+    date: "Aug 2026 – Present",
+    location: "Minnesota",
+    description:
+      "I support the Python and SQL pipelines that supply data for enterprise reporting.",
+    bullets: [
+      "Investigate failed Apache Airflow jobs and resolve issues that interrupt reporting.",
+      "Compare Oracle records with their Hive counterparts and trace mismatches during a reporting migration.",
+      "Build SQL tables, transformations, and calculated columns for reporting, using Databricks, Python, and SQL for repeatable validation checks.",
+    ],
+  },
+  {
+    role: "Graduate Software Engineer",
+    company: "Avance Consulting Services",
     date: "Jan 2024 – Dec 2024",
     location: "Hyderabad, India",
     description:
-      "Built AI-powered resume matching, candidate ranking, and real-time ML inference features for the Wisestep ATS platform using Python, NLP, machine learning, and REST APIs.",
+      "Developed Python and FastAPI services for an e-commerce platform.",
     bullets: [
-      "Designed and trained ML models to automate resume-job matching using NLP techniques.",
-      "Built resume scoring algorithms based on recruiter behavior and historical hiring success.",
-      "Developed REST APIs for real-time model inference and integration into the Wisestep ATS.",
-      "Monitored production model performance using precision, recall, and F1-score dashboards.",
+      "Implemented SQL-backed features, tested queries, and investigated backend defects.",
+      "Integrated AWS-hosted machine learning inference APIs and validated their responses through testing and code review.",
     ],
   },
   {
@@ -56,12 +67,10 @@ const experience = [
     date: "Sep 2023 – Dec 2023",
     location: "Hyderabad, India",
     description:
-      "Supported AI and machine learning projects by building end-to-end ML workflows, performing data analysis, writing SQL queries, and creating dashboards for project insights.",
+      "Analyzed structured datasets and shared findings through Tableau dashboards.",
     bullets: [
-      "Built machine learning pipelines from preprocessing to model training and evaluation.",
-      "Performed data cleaning, feature engineering, and exploratory data analysis.",
-      "Used Python libraries including Pandas, NumPy, and Scikit-learn.",
-      "Created Tableau dashboards to visualize project insights and model performance.",
+      "Cleaned and explored data using Python, Pandas, NumPy, and SQL.",
+      "Built Tableau dashboards to communicate patterns in the data.",
     ],
   },
 ];
@@ -70,12 +79,12 @@ const education = [
   {
     school: "University of St. Thomas",
     degree: "Master’s Degree, Artificial Intelligence",
-    date: "Jan 2025 – Expected Dec 2026",
+    date: "Jan 2025 – Expected May 2027",
     detail:
-      "Focused on artificial intelligence, machine learning, data analysis, model development, and responsible AI systems.",
+      "Saint Paul, Minnesota · GPA 3.8/4.0",
   },
   {
-    school: "HITAM",
+    school: "Hyderabad Institute of Technology and Management",
     degree: "Bachelor of Technology, Electrical and Electronics Engineering",
     date: "2019 – 2022",
     detail:
@@ -85,12 +94,28 @@ const education = [
 
 const projects = [
   {
-    title: "Spatio-Temporal Crime Risk Prediction",
+    title: "Patient Readmission Prediction",
     description:
-      "Built a neural network-based system to predict crime occurrence and forecast crime categories using Chicago crime data, temporal features, lag features, rolling windows, and community-area spatial grouping.",
-    tech: ["Python", "Pandas", "TensorFlow/Keras", "Neural Networks", "Feature Engineering"],
-    highlight: "70% crime occurrence accuracy",
-    github: "",
+      "Compared logistic regression, random forest, and gradient boosting on hospital readmission data. Gradient boosting performed best, correctly classifying about 81% of cases.",
+    tech: ["Python", "scikit-learn", "Gradient Boosting"],
+    highlight: "81.25% accuracy",
+    github: "https://github.com/Dilipsingh1234/Patient_Readmission",
+  },
+  {
+    title: "Chicago Spatio-Temporal Crime Risk Prediction",
+    description:
+      "Turned roughly 494,000 reported incidents into 1.35 million hourly observations grouped by Chicago community area. Used calendar and recent incident patterns to predict whether an area would record an incident in a given hour.",
+    tech: ["Python", "Pandas", "scikit-learn", "Feature Engineering"],
+    highlight: "0.748 ROC-AUC",
+    github: "https://github.com/Dilipsingh1234/chicago-crime-spatiotemporal-prediction",
+  },
+  {
+    title: "Retinal OCT Image Classification",
+    description:
+      "Adapted a pretrained MobileNetV2 network to classify retinal scans. The model extracts features from each image and assigns it to one of four categories.",
+    tech: ["MobileNetV2", "Transfer Learning", "Computer Vision"],
+    highlight: "Four retinal image classes",
+    github: "https://github.com/Dilipsingh1234/Retinal_OCT_Image_Classification",
   },
   {
     title: "Async AI Inference System",
@@ -106,7 +131,7 @@ const projects = [
       "A RAG-powered YouTube Q&A chatbot that retrieves transcript chunks and generates context-aware answers using LangChain, FAISS, and OpenAI embeddings.",
     tech: ["Python", "LangChain", "OpenAI API", "FAISS", "RAG"],
     highlight: "Transcript-based GenAI search",
-    github: "",
+    github: "https://github.com/Dilipsingh1234/Rag_Youtube_Chatbot",
   },
   {
     title: "Loan Default Prediction",
@@ -114,7 +139,7 @@ const projects = [
       "A machine learning classification project that predicts loan default risk using borrower and financial data, with a focus on preprocessing, model training, and evaluation.",
     tech: ["Python", "Pandas", "Scikit-learn", "Machine Learning"],
     highlight: "Financial risk prediction",
-    github: "",
+    github: "https://github.com/Dilipsingh1234/Loan-default-prediction",
   },
 ];
 
@@ -182,12 +207,12 @@ function App() {
 
           <h1 className="mb-4 text-2xl font-medium text-white/70 md:text-3xl">
           
-            AI. Software. Data.
+            Data Engineering & Machine Learning
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-white/70 md:text-2xl">
-            I build production-ready machine learning systems, data pipelines,
-            APIs, and GenAI applications that turn data into intelligent products.
+            I’m a Data Engineering Intern at Seagate Technology and an M.S.
+            candidate in Artificial Intelligence at the University of St. Thomas.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -199,7 +224,7 @@ function App() {
             </a>
 
             <a
-              href="mailto:thakurdilipsingh54207@gmail.com"
+              href="mailto:Dilipsthakur27@gmail.com"
               className="rounded-full border border-white/20 px-7 py-3 font-medium text-white transition hover:bg-white/10"
             >
               Contact Me
@@ -215,13 +240,14 @@ function App() {
           </p>
 
           <h2 className="max-w-4xl text-5xl font-semibold tracking-tight md:text-7xl">
-            Building intelligent systems with real-world impact.
+            From reporting pipelines to predictive models.
           </h2>
 
           <p className="mt-8 max-w-3xl text-xl leading-9 text-black/65">
-            I’m a Master’s in Artificial Intelligence student at the University
-            of St. Thomas with experience building AI-powered resume matching,
-            ML inference APIs, data pipelines, dashboards, and GenAI applications.
+            At Seagate, I trace reporting discrepancies back to their source as data
+            moves from Oracle to Hive. In my machine learning projects, I’ve used
+            hospital records to study readmission risk and Chicago incident reports
+            to model how crime patterns vary by place and hour.
           </p>
         </FadeIn>
       </section>
@@ -408,6 +434,7 @@ function App() {
 
           <a
             href="/Dilip_Resume.pdf"
+            download
             className="mt-10 inline-block rounded-full bg-black px-7 py-3 font-medium text-white transition hover:scale-105"
           >
             Download Resume
@@ -428,7 +455,7 @@ function App() {
 
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <a
-              href="mailto:thakurdilipsingh54207@gmail.com"
+              href="mailto:Dilipsthakur27@gmail.com"
               className="rounded-full bg-white px-7 py-3 font-medium text-black"
             >
               Email Me
